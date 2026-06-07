@@ -1,0 +1,46 @@
+{
+  "seasonYear": 2026,
+  "source": "AVP League",
+  "teams": [
+    {
+      "teamID": "aa",
+      "mensPair": { "player1": "Troy Field", "player2": "Ryan Wilcox" },
+      "womensPair": { "player1": "Taryn Brasher", "player2": "Kristen Cruz" }
+    },
+    {
+      "teamID": "bb",
+      "mensPair": { "player1": "Derek Bradford", "player2": "Evan Cory" },
+      "womensPair": { "player1": "Lexy Denaburg", "player2": "Julia Donlin" }
+    },
+    {
+      "teamID": "dd",
+      "mensPair": { "player1": "Paul Lotman", "player2": "Miles Partain" },
+      "womensPair": { "player1": "Kylie DeBerg", "player2": "Betsi Flint" }
+    },
+    {
+      "teamID": "lal",
+      "mensPair": { "player1": "Hagen Smith", "player2": "Logan Webber" },
+      "womensPair": { "player1": "Maddie Anderson", "player2": "Alaina Chacon" }
+    },
+    {
+      "teamID": "mm",
+      "mensPair": { "player1": "Taylor Crabb", "player2": "Andy Benesh" },
+      "womensPair": { "player1": "Kelly Cheng", "player2": "Megan Kraft" }
+    },
+    {
+      "teamID": "nyn",
+      "mensPair": { "player1": "Chaim Schalk", "player2": "James Shaw" },
+      "womensPair": { "player1": "Toni Rodriguez", "player2": "Molly Shaw" }
+    },
+    {
+      "teamID": "pbp",
+      "mensPair": { "player1": "Trevor Crabb", "player2": "Phil Dalhausser" },
+      "womensPair": { "player1": "Melissa Humana-Paredes", "player2": "Brandie Wilkerson" }
+    },
+    {
+      "teamID": "sds",
+      "mensPair": { "player1": "Chase Budinger", "player2": "Miles Evans" },
+      "womensPair": { "player1": "Megan Rice", "player2": "Geena Urango" }
+    }
+  ]
+}

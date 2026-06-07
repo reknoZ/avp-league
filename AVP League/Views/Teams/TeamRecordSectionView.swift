@@ -5,7 +5,7 @@ struct TeamRecordSectionView: View {
 
     var body: some View {
         if let standing {
-            Section("Season Record") {
+            Section("Regular Season Record") {
                 LabeledContent("Rank", value: "#\(standing.rank)")
                 LabeledContent("Match Points", value: "\(standing.matchPoints)")
                 LabeledContent("Gender Matches", value: standing.record)

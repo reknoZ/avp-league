@@ -9,6 +9,10 @@ struct StandingsView: View {
         dataService.standings(for: seasonSelection.selectedSeason, category: selectedCategory)
     }
 
+    private var championshipResults: [ChampionshipFinish] {
+        dataService.championshipResults(for: seasonSelection.selectedSeason)
+    }
+
     var body: some View {
         NavigationStack {
             List {
@@ -23,12 +27,24 @@ struct StandingsView: View {
                     .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
                 }
 
+                if selectedCategory == .city, !championshipResults.isEmpty {
+                    Section("Championship Results") {
+                        ChampionshipResultsView(results: championshipResults)
+                    }
+                }
+
                 Section {
-                    ForEach(standings) { standing in
+                    ForEach(Array(standings.enumerated()), id: \.element.id) { index, standing in
                         StandingsRowView(standing: standing)
+
+                        if selectedCategory == .city,
+                           index == SeasonStructure.playoffTeamCount - 1,
+                           standings.count > SeasonStructure.playoffTeamCount {
+                            PlayoffCutlineRow()
+                        }
                     }
                 } header: {
-                    StandingsHeaderView(category: selectedCategory)
+                    StandingsHeaderView()
                 }
             }
             .listStyle(.insetGrouped)
@@ -46,6 +62,25 @@ struct StandingsView: View {
                 await dataService.refreshLiveScores()
             }
         }
+    }
+}
+
+private struct PlayoffCutlineRow: View {
+    var body: some View {
+        HStack(spacing: 8) {
+            Rectangle()
+                .fill(Color.secondary.opacity(0.25))
+                .frame(height: 1)
+            Text("Championship cutline")
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .fixedSize()
+            Rectangle()
+                .fill(Color.secondary.opacity(0.25))
+                .frame(height: 1)
+        }
+        .listRowBackground(Color.clear)
+        .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
     }
 }
 

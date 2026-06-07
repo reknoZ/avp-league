@@ -1,31 +1,28 @@
 import SwiftUI
 
 struct StandingsHeaderView: View {
-    let category: StandingsCategory
-
     var body: some View {
-        HStack {
-            Text(headerText)
-                .font(.caption)
-                .foregroundStyle(.secondary)
+        HStack(spacing: 12) {
             Spacer()
+
+            HStack(spacing: 0) {
+                headerCell("W")
+                headerCell("L")
+                headerCell("Pts")
+            }
         }
         .padding(.vertical, 4)
     }
 
-    private var headerText: String {
-        switch category {
-        case .city:
-            return "Combined men's and women's matches. Ranked by win percentage, then wins, then set differential."
-        case .women:
-            return "Women's matches only. Ranked by win percentage, then match points, then set differential."
-        case .men:
-            return "Men's matches only. Ranked by win percentage, then match points, then set differential."
-        }
+    private func headerCell(_ title: String) -> some View {
+        Text(title)
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(.secondary)
+            .frame(width: StandingsStatColumns.columnWidth, alignment: .trailing)
     }
 }
 
 #Preview {
-    StandingsHeaderView(category: .city)
+    StandingsHeaderView()
         .padding()
 }

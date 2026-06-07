@@ -1,6 +1,6 @@
 import Foundation
 
-struct LeagueMatch: Identifiable, Hashable {
+struct LeagueMatch: Identifiable, Hashable, Codable {
     let id: String
     let seasonYear: Int
     let weekNumber: Int
@@ -57,7 +57,12 @@ struct ScheduleWeek: Identifiable, Hashable {
     var id: Int { number }
 
     var title: String {
-        "Week \(number)"
+        switch SeasonStructure.phase(for: number) {
+        case .regularSeason:
+            "Week \(number)"
+        case .playoffs:
+            "Championship"
+        }
     }
 
     var dateRangeLabel: String {
@@ -108,8 +113,9 @@ enum ScheduleWeekCalculator {
         return calendar
     }
 
-    static func weeks(for matches: [LeagueMatch]) -> [ScheduleWeek] {
-        let grouped = Dictionary(grouping: matches, by: \.weekNumber)
+    static func weeks(for matches: [LeagueMatch], phase: SeasonPhase? = nil) -> [ScheduleWeek] {
+        let source = phase.map { matches.inPhase($0) } ?? matches
+        let grouped = Dictionary(grouping: source, by: \.weekNumber)
 
         return grouped.keys.sorted().compactMap { number in
             guard let weekMatches = grouped[number], !weekMatches.isEmpty else { return nil }

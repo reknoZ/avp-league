@@ -3,6 +3,7 @@ import SwiftUI
 struct ScheduleView: View {
     @Environment(LeagueDataService.self) private var dataService
     @Bindable var seasonSelection: SeasonSelectionModel
+    @State private var selectedPhase: SeasonPhase = .regularSeason
     @State private var selectedWeekNumber: Int?
 
     private var calendar: Calendar {
@@ -19,11 +20,20 @@ struct ScheduleView: View {
         }
     }
 
+    private var hasPlayoffs: Bool {
+        matches.contains { $0.phase == .playoffs }
+    }
+
+    private var phaseMatches: [LeagueMatch] {
+        matches.inPhase(selectedPhase)
+    }
+
     private var weeks: [ScheduleWeek] {
-        ScheduleWeekCalculator.weeks(for: matches)
+        ScheduleWeekCalculator.weeks(for: phaseMatches)
     }
 
     private var selectedWeek: ScheduleWeek? {
+        guard selectedPhase == .regularSeason else { return weeks.first }
         guard let selectedWeekNumber else { return weeks.first }
         return weeks.first { $0.number == selectedWeekNumber } ?? weeks.first
     }
@@ -34,8 +44,13 @@ struct ScheduleView: View {
     }
 
     private var displayedMatches: [LeagueMatch] {
-        guard let selectedWeek else { return matches }
-        return matches.filter { $0.weekNumber == selectedWeek.number }
+        switch selectedPhase {
+        case .regularSeason:
+            guard let selectedWeek else { return phaseMatches }
+            return phaseMatches.filter { $0.weekNumber == selectedWeek.number }
+        case .playoffs:
+            return phaseMatches
+        }
     }
 
     private var liveMatches: [LeagueMatch] {
@@ -46,6 +61,10 @@ struct ScheduleView: View {
 
     private var selectedWeekVenue: String? {
         displayedMatches.first.map(\.venue)
+    }
+
+    private var championshipResults: [ChampionshipFinish] {
+        dataService.championshipResults(for: seasonSelection.selectedSeason)
     }
 
     private var matchesByDay: [(day: Date, matches: [LeagueMatch])] {
@@ -61,10 +80,33 @@ struct ScheduleView: View {
     var body: some View {
         NavigationStack {
             List {
+                Section {
+                    Picker("Schedule", selection: $selectedPhase) {
+                        Text(SeasonPhase.regularSeason.title).tag(SeasonPhase.regularSeason)
+                        Text(SeasonPhase.playoffs.title).tag(SeasonPhase.playoffs)
+                    }
+                    .pickerStyle(.segmented)
+                    .listRowBackground(Color.clear)
+                    .listRowInsets(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                }
+
+                if selectedPhase == .playoffs, !championshipResults.isEmpty {
+                    Section("Championship Results") {
+                        ChampionshipResultsView(results: championshipResults)
+                    }
+                }
+
                 if let selectedWeekVenue {
                     Section {
                         Label(VenueTimeZone.weekLocation(from: selectedWeekVenue), systemImage: "mappin.and.ellipse")
                             .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
+                if displayedMatches.isEmpty {
+                    Section {
+                        Text(emptyPhaseMessage)
                             .foregroundStyle(.secondary)
                     }
                 }
@@ -101,7 +143,7 @@ struct ScheduleView: View {
                 }
 
                 ToolbarItem(placement: .topBarTrailing) {
-                    if let selectedWeek, let weekIndex = selectedWeekIndex {
+                    if selectedPhase == .regularSeason, let selectedWeek, let weekIndex = selectedWeekIndex {
                         WeekPickerBar(
                             week: selectedWeek,
                             canGoPrevious: weekIndex > 0,
@@ -109,12 +151,21 @@ struct ScheduleView: View {
                             onPrevious: selectPreviousWeek,
                             onNext: selectNextWeek
                         )
+                    } else if selectedPhase == .playoffs, let week = weeks.first {
+                        Text(week.title)
+                            .font(.headline)
+                            .padding(.horizontal, 8)
                     }
                 }
             }
             .onAppear(perform: resetWeekSelection)
             .onChange(of: seasonSelection.selectedSeason) { _, _ in
                 resetWeekSelection()
+            }
+            .onChange(of: selectedPhase) { _, newPhase in
+                if newPhase == .regularSeason {
+                    resetWeekSelection()
+                }
             }
             .onChange(of: dataService.season2026Matches.count) { _, _ in
                 resetWeekSelection()
@@ -125,8 +176,21 @@ struct ScheduleView: View {
         }
     }
 
+    private var emptyPhaseMessage: String {
+        switch selectedPhase {
+        case .regularSeason:
+            "No regular season matches scheduled."
+        case .playoffs:
+            hasPlayoffs
+                ? "No championship matches scheduled."
+                : "Top \(SeasonStructure.playoffTeamCount) teams after the regular season advance to the championship weekend."
+        }
+    }
+
     private func resetWeekSelection() {
-        selectedWeekNumber = ScheduleWeekCalculator.defaultWeek(in: weeks)?.number
+        selectedWeekNumber = ScheduleWeekCalculator.defaultWeek(
+            in: ScheduleWeekCalculator.weeks(for: matches.inPhase(.regularSeason))
+        )?.number
     }
 
     private func selectPreviousWeek() {

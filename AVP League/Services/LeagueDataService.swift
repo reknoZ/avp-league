@@ -15,7 +15,14 @@ final class LeagueDataService {
     private var autoRefreshTask: Task<Void, Never>?
 
     private init() {
-        season2026Matches = Self.scheduleOnlyMatches(for: 2026)
+        let schedule = Self.scheduleOnlyMatches(for: 2026)
+        if let cached = MatchResultsCache.load(seasonYear: 2026) {
+            season2026Matches = MatchResultsCache.merge(cached.matches, into: schedule)
+            lastLiveScoreUpdate = cached.savedAt
+            isUsingLiveData = true
+        } else {
+            season2026Matches = schedule
+        }
     }
 
     func startAutoRefresh(interval: TimeInterval = 30) {
@@ -47,11 +54,16 @@ final class LeagueDataService {
                 sampleMatches: sampleMatches,
                 apiMatches: apiMatches
             )
+            MatchResultsCache.save(season2026Matches, seasonYear: 2026)
             isUsingLiveData = true
             lastLiveScoreUpdate = Date()
         } catch {
             liveScoreError = error.localizedDescription
-            isUsingLiveData = false
+            if MatchResultsCache.load(seasonYear: 2026) != nil {
+                isUsingLiveData = true
+            } else {
+                isUsingLiveData = false
+            }
         }
     }
 
@@ -92,7 +104,19 @@ final class LeagueDataService {
     }
 
     func standings(for season: Season, category: StandingsCategory = .city) -> [TeamStanding] {
-        StandingsCalculator.standings(for: matches(for: season), category: category)
+        let seasonMatches = matches(for: season)
+        let relevantMatches = category == .city
+            ? seasonMatches.inPhase(.regularSeason)
+            : seasonMatches
+        return StandingsCalculator.standings(for: relevantMatches, category: category)
+    }
+
+    func championshipResults(for season: Season) -> [ChampionshipFinish] {
+        HistoricalMatchData.championshipResults(for: season.year) ?? []
+    }
+
+    func playoffMatches(for season: Season) -> [LeagueMatch] {
+        matches(for: season).inPhase(.playoffs)
     }
 
     func matches(for team: AVPTeam, season: Season) -> [LeagueMatch] {

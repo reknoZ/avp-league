@@ -1,0 +1,1919 @@
+{
+  "seasonYear": 2025,
+  "source": "http://bvbinfo.info/AVPLeague",
+  "scrapedAt": "2026-06-07T16:50:57.698837Z",
+  "teams": [
+    {
+      "teamID": "aa",
+      "mensPair": {
+        "player1": "Avery Drost",
+        "player2": "Wyatt Harrison"
+      },
+      "womensPair": {
+        "player1": "Taryn Brasher",
+        "player2": "Kristen Cruz"
+      }
+    },
+    {
+      "teamID": "bb",
+      "mensPair": {
+        "player1": "Seain Cook",
+        "player2": "Brian Miller"
+      },
+      "womensPair": {
+        "player1": "Theo Brunner",
+        "player2": "Seain Cook"
+      }
+    },
+    {
+      "teamID": "dd",
+      "mensPair": {
+        "player1": "Andy Benesh",
+        "player2": "Miles Partain"
+      },
+      "womensPair": {
+        "player1": "Kylie Deberg",
+        "player2": "Hailey Harward"
+      }
+    },
+    {
+      "teamID": "lal",
+      "mensPair": {
+        "player1": "Hagen Smith",
+        "player2": "Logan Webber"
+      },
+      "womensPair": {
+        "player1": "Terese Cannon",
+        "player2": "Megan Kraft"
+      }
+    },
+    {
+      "teamID": "mm",
+      "mensPair": {
+        "player1": "Chaim Schalk",
+        "player2": "James Shaw"
+      },
+      "womensPair": {
+        "player1": "Kelly Cheng",
+        "player2": "Molly Shaw"
+      }
+    },
+    {
+      "teamID": "nyn",
+      "mensPair": {
+        "player1": "Taylor Crabb",
+        "player2": "Taylor Sander"
+      },
+      "womensPair": {
+        "player1": "Corinne Quiggle",
+        "player2": "Megan J. Rice"
+      }
+    },
+    {
+      "teamID": "pbp",
+      "mensPair": {
+        "player1": "Trevor Crabb",
+        "player2": "Phil Dalhausser"
+      },
+      "womensPair": {
+        "player1": "Melissa Humana-Paredes",
+        "player2": "Brandie Wilkerson"
+      }
+    },
+    {
+      "teamID": "sds",
+      "mensPair": {
+        "player1": "Chase Budinger",
+        "player2": "Miles Evans"
+      },
+      "womensPair": {
+        "player1": "Toni Rodriguez",
+        "player2": "Geena Urango"
+      }
+    }
+  ],
+  "matches": [
+    {
+      "id": "25-w01-M01-bb-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 23,
+      "hour": 11,
+      "homeTeamID": "bb",
+      "awayTeamID": "pbp",
+      "venue": "Palm Beach, FL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 14,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w01-M02-dd-sds",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 23,
+      "hour": 12,
+      "homeTeamID": "dd",
+      "awayTeamID": "sds",
+      "venue": "Palm Beach, FL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 19,
+          "awayPoints": 17
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 8
+        }
+      ]
+    },
+    {
+      "id": "25-w01-F01-bb-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 23,
+      "hour": 15,
+      "homeTeamID": "bb",
+      "awayTeamID": "pbp",
+      "venue": "Palm Beach, FL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        }
+      ]
+    },
+    {
+      "id": "25-w01-F02-dd-sds",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 23,
+      "hour": 16,
+      "homeTeamID": "dd",
+      "awayTeamID": "sds",
+      "venue": "Palm Beach, FL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w01-M03-bb-sds",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 24,
+      "hour": 11,
+      "homeTeamID": "bb",
+      "awayTeamID": "sds",
+      "venue": "Palm Beach, FL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 14,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w01-M04-dd-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 24,
+      "hour": 12,
+      "homeTeamID": "dd",
+      "awayTeamID": "pbp",
+      "venue": "Palm Beach, FL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        }
+      ]
+    },
+    {
+      "id": "25-w01-F03-bb-sds",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 24,
+      "hour": 15,
+      "homeTeamID": "bb",
+      "awayTeamID": "sds",
+      "venue": "Palm Beach, FL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 17,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        }
+      ]
+    },
+    {
+      "id": "25-w01-F04-dd-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 1,
+      "month": 5,
+      "day": 24,
+      "hour": 16,
+      "homeTeamID": "dd",
+      "awayTeamID": "pbp",
+      "venue": "Palm Beach, FL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 9,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w02-M01-aa-sds",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 6,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "sds",
+      "venue": "San Diego, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w02-M02-dd-lal",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 6,
+      "hour": 12,
+      "homeTeamID": "dd",
+      "awayTeamID": "lal",
+      "venue": "San Diego, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w02-F01-aa-sds",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 6,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "sds",
+      "venue": "San Diego, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 10
+        }
+      ]
+    },
+    {
+      "id": "25-w02-F02-dd-lal",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 6,
+      "hour": 16,
+      "homeTeamID": "dd",
+      "awayTeamID": "lal",
+      "venue": "San Diego, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w02-M03-aa-dd",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 7,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "dd",
+      "venue": "San Diego, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 9,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w02-M04-lal-sds",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 7,
+      "hour": 12,
+      "homeTeamID": "lal",
+      "awayTeamID": "sds",
+      "venue": "San Diego, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 16,
+          "awayPoints": 14
+        },
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        }
+      ]
+    },
+    {
+      "id": "25-w02-F03-aa-dd",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 7,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "dd",
+      "venue": "San Diego, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        }
+      ]
+    },
+    {
+      "id": "25-w02-F04-lal-sds",
+      "seasonYear": 2025,
+      "weekNumber": 2,
+      "month": 6,
+      "day": 7,
+      "hour": 16,
+      "homeTeamID": "lal",
+      "awayTeamID": "sds",
+      "venue": "San Diego, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        },
+        {
+          "homePoints": 21,
+          "awayPoints": 23
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        }
+      ]
+    },
+    {
+      "id": "25-w03-M01-bb-mm",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 13,
+      "hour": 11,
+      "homeTeamID": "bb",
+      "awayTeamID": "mm",
+      "venue": "Atlanta, GA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 21,
+          "awayPoints": 19
+        },
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w03-M02-nyn-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 13,
+      "hour": 12,
+      "homeTeamID": "nyn",
+      "awayTeamID": "pbp",
+      "venue": "Atlanta, GA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w03-F01-bb-mm",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 13,
+      "hour": 15,
+      "homeTeamID": "bb",
+      "awayTeamID": "mm",
+      "venue": "Atlanta, GA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        }
+      ]
+    },
+    {
+      "id": "25-w03-F02-nyn-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 13,
+      "hour": 16,
+      "homeTeamID": "nyn",
+      "awayTeamID": "pbp",
+      "venue": "Atlanta, GA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 6,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w03-M03-bb-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 14,
+      "hour": 11,
+      "homeTeamID": "bb",
+      "awayTeamID": "nyn",
+      "venue": "Atlanta, GA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w03-M04-mm-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 14,
+      "hour": 12,
+      "homeTeamID": "mm",
+      "awayTeamID": "pbp",
+      "venue": "Atlanta, GA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w03-F03-bb-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 14,
+      "hour": 15,
+      "homeTeamID": "bb",
+      "awayTeamID": "nyn",
+      "venue": "Atlanta, GA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        }
+      ]
+    },
+    {
+      "id": "25-w03-F04-mm-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 3,
+      "month": 6,
+      "day": 14,
+      "hour": 16,
+      "homeTeamID": "mm",
+      "awayTeamID": "pbp",
+      "venue": "Atlanta, GA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 20,
+          "awayPoints": 18
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w04-M01-aa-dd",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 21,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "dd",
+      "venue": "East Hampton, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 6,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w04-M02-bb-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 21,
+      "hour": 12,
+      "homeTeamID": "bb",
+      "awayTeamID": "nyn",
+      "venue": "East Hampton, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 4,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w04-F01-aa-dd",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 21,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "dd",
+      "venue": "East Hampton, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 14,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        },
+        {
+          "homePoints": 16,
+          "awayPoints": 14
+        }
+      ]
+    },
+    {
+      "id": "25-w04-F02-bb-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 21,
+      "hour": 16,
+      "homeTeamID": "bb",
+      "awayTeamID": "nyn",
+      "venue": "East Hampton, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 19,
+          "awayPoints": 17
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        }
+      ]
+    },
+    {
+      "id": "25-w04-M03-aa-bb",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 22,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "bb",
+      "venue": "East Hampton, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w04-M04-dd-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 22,
+      "hour": 12,
+      "homeTeamID": "dd",
+      "awayTeamID": "nyn",
+      "venue": "East Hampton, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w04-F03-aa-bb",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 22,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "bb",
+      "venue": "East Hampton, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 8
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        }
+      ]
+    },
+    {
+      "id": "25-w04-F04-dd-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 4,
+      "month": 6,
+      "day": 22,
+      "hour": 16,
+      "homeTeamID": "dd",
+      "awayTeamID": "nyn",
+      "venue": "East Hampton, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        }
+      ]
+    },
+    {
+      "id": "25-w05-M01-lal-sds",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 11,
+      "hour": 11,
+      "homeTeamID": "lal",
+      "awayTeamID": "sds",
+      "venue": "Los Angeles, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        }
+      ]
+    },
+    {
+      "id": "25-w05-M02-mm-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 11,
+      "hour": 12,
+      "homeTeamID": "mm",
+      "awayTeamID": "pbp",
+      "venue": "Los Angeles, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w05-F01-lal-sds",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 11,
+      "hour": 15,
+      "homeTeamID": "lal",
+      "awayTeamID": "sds",
+      "venue": "Los Angeles, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 8
+        }
+      ]
+    },
+    {
+      "id": "25-w05-F02-mm-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 11,
+      "hour": 16,
+      "homeTeamID": "mm",
+      "awayTeamID": "pbp",
+      "venue": "Los Angeles, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w05-M03-lal-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 12,
+      "hour": 11,
+      "homeTeamID": "lal",
+      "awayTeamID": "pbp",
+      "venue": "Los Angeles, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        }
+      ]
+    },
+    {
+      "id": "25-w05-M04-mm-sds",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 12,
+      "hour": 12,
+      "homeTeamID": "mm",
+      "awayTeamID": "sds",
+      "venue": "Los Angeles, CA",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w05-F03-lal-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 12,
+      "hour": 15,
+      "homeTeamID": "lal",
+      "awayTeamID": "pbp",
+      "venue": "Los Angeles, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 6,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w05-F04-mm-sds",
+      "seasonYear": 2025,
+      "weekNumber": 5,
+      "month": 7,
+      "day": 12,
+      "hour": 16,
+      "homeTeamID": "mm",
+      "awayTeamID": "sds",
+      "venue": "Los Angeles, CA",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w06-M01-aa-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 19,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "nyn",
+      "venue": "New York, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w06-M02-pbp-sds",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 19,
+      "hour": 12,
+      "homeTeamID": "pbp",
+      "awayTeamID": "sds",
+      "venue": "New York, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        }
+      ]
+    },
+    {
+      "id": "25-w06-F01-aa-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 19,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "nyn",
+      "venue": "New York, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 21,
+          "awayPoints": 19
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 5
+        }
+      ]
+    },
+    {
+      "id": "25-w06-F02-pbp-sds",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 19,
+      "hour": 16,
+      "homeTeamID": "pbp",
+      "awayTeamID": "sds",
+      "venue": "New York, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        }
+      ]
+    },
+    {
+      "id": "25-w06-M03-aa-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 20,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "pbp",
+      "venue": "New York, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 7,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w06-M04-nyn-sds",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 20,
+      "hour": 12,
+      "homeTeamID": "nyn",
+      "awayTeamID": "sds",
+      "venue": "New York, NY",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w06-F03-aa-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 20,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "pbp",
+      "venue": "New York, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        }
+      ]
+    },
+    {
+      "id": "25-w06-F04-nyn-sds",
+      "seasonYear": 2025,
+      "weekNumber": 6,
+      "month": 7,
+      "day": 20,
+      "hour": 16,
+      "homeTeamID": "nyn",
+      "awayTeamID": "sds",
+      "venue": "New York, NY",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        }
+      ]
+    },
+    {
+      "id": "25-w07-M01-aa-mm",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 1,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "mm",
+      "venue": "Austin, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 7,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w07-M02-lal-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 1,
+      "hour": 12,
+      "homeTeamID": "lal",
+      "awayTeamID": "nyn",
+      "venue": "Austin, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 7,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w07-F01-aa-mm",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 1,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "mm",
+      "venue": "Austin, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w07-F02-lal-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 1,
+      "hour": 16,
+      "homeTeamID": "lal",
+      "awayTeamID": "nyn",
+      "venue": "Austin, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        }
+      ]
+    },
+    {
+      "id": "25-w07-M03-aa-lal",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 2,
+      "hour": 11,
+      "homeTeamID": "aa",
+      "awayTeamID": "lal",
+      "venue": "Austin, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 17
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w07-M04-mm-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 2,
+      "hour": 12,
+      "homeTeamID": "mm",
+      "awayTeamID": "nyn",
+      "venue": "Austin, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        },
+        {
+          "homePoints": 14,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w07-F03-aa-lal",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 2,
+      "hour": 15,
+      "homeTeamID": "aa",
+      "awayTeamID": "lal",
+      "venue": "Austin, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        }
+      ]
+    },
+    {
+      "id": "25-w07-F04-mm-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 7,
+      "month": 8,
+      "day": 2,
+      "hour": 16,
+      "homeTeamID": "mm",
+      "awayTeamID": "nyn",
+      "venue": "Austin, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 17
+        },
+        {
+          "homePoints": 16,
+          "awayPoints": 14
+        }
+      ]
+    },
+    {
+      "id": "25-w08-M01-bb-dd",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 8,
+      "hour": 11,
+      "homeTeamID": "bb",
+      "awayTeamID": "dd",
+      "venue": "Dallas, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w08-M02-lal-mm",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 8,
+      "hour": 12,
+      "homeTeamID": "lal",
+      "awayTeamID": "mm",
+      "venue": "Dallas, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w08-F01-bb-dd",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 8,
+      "hour": 15,
+      "homeTeamID": "bb",
+      "awayTeamID": "dd",
+      "venue": "Dallas, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w08-F02-lal-mm",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 8,
+      "hour": 16,
+      "homeTeamID": "lal",
+      "awayTeamID": "mm",
+      "venue": "Dallas, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w08-M03-bb-lal",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 9,
+      "hour": 11,
+      "homeTeamID": "bb",
+      "awayTeamID": "lal",
+      "venue": "Dallas, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w08-M04-dd-mm",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 9,
+      "hour": 12,
+      "homeTeamID": "dd",
+      "awayTeamID": "mm",
+      "venue": "Dallas, TX",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 8
+        }
+      ]
+    },
+    {
+      "id": "25-w08-F03-bb-lal",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 9,
+      "hour": 15,
+      "homeTeamID": "bb",
+      "awayTeamID": "lal",
+      "venue": "Dallas, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w08-F04-dd-mm",
+      "seasonYear": 2025,
+      "weekNumber": 8,
+      "month": 8,
+      "day": 9,
+      "hour": 16,
+      "homeTeamID": "dd",
+      "awayTeamID": "mm",
+      "venue": "Dallas, TX",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w09-M01-dd-lal",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 11,
+      "homeTeamID": "dd",
+      "awayTeamID": "lal",
+      "venue": "Chicago, IL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        },
+        {
+          "homePoints": 13,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 17,
+          "awayPoints": 19
+        }
+      ]
+    },
+    {
+      "id": "25-w09-M02-lal-sds",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 12,
+      "homeTeamID": "lal",
+      "awayTeamID": "sds",
+      "venue": "Chicago, IL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 19,
+          "awayPoints": 17
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 13
+        }
+      ]
+    },
+    {
+      "id": "25-w09-M03-mm-nyn",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 15,
+      "homeTeamID": "mm",
+      "awayTeamID": "nyn",
+      "venue": "Chicago, IL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 11
+        },
+        {
+          "homePoints": 8,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        }
+      ]
+    },
+    {
+      "id": "25-w09-M04-mm-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 16,
+      "homeTeamID": "mm",
+      "awayTeamID": "pbp",
+      "venue": "Chicago, IL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 7,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 10,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w09-F01-pbp-sds",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 16,
+      "homeTeamID": "pbp",
+      "awayTeamID": "sds",
+      "venue": "Chicago, IL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 9
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        }
+      ]
+    },
+    {
+      "id": "25-w09-F02-lal-sds",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 16,
+      "homeTeamID": "lal",
+      "awayTeamID": "sds",
+      "venue": "Chicago, IL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 11,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w09-F03-bb-mm",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 16,
+      "homeTeamID": "bb",
+      "awayTeamID": "mm",
+      "venue": "Chicago, IL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 18,
+          "awayPoints": 16
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        }
+      ]
+    },
+    {
+      "id": "25-w09-F04-aa-bb",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 30,
+      "hour": 16,
+      "homeTeamID": "aa",
+      "awayTeamID": "bb",
+      "venue": "Chicago, IL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 12
+        },
+        {
+          "homePoints": 18,
+          "awayPoints": 20
+        },
+        {
+          "homePoints": 9,
+          "awayPoints": 15
+        }
+      ]
+    },
+    {
+      "id": "25-w09-M05-lal-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 31,
+      "hour": 11,
+      "homeTeamID": "lal",
+      "awayTeamID": "pbp",
+      "venue": "Chicago, IL",
+      "division": "men",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 12,
+          "awayPoints": 15
+        },
+        {
+          "homePoints": 14,
+          "awayPoints": 16
+        }
+      ]
+    },
+    {
+      "id": "25-w09-F05-bb-pbp",
+      "seasonYear": 2025,
+      "weekNumber": 9,
+      "month": 8,
+      "day": 31,
+      "hour": 12,
+      "homeTeamID": "bb",
+      "awayTeamID": "pbp",
+      "venue": "Chicago, IL",
+      "division": "women",
+      "status": "completed",
+      "sets": [
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        },
+        {
+          "homePoints": 15,
+          "awayPoints": 10
+        }
+      ]
+    }
+  ]
+}

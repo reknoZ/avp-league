@@ -18,7 +18,7 @@ struct TeamsView: View {
             .listStyle(.insetGrouped)
             .navigationTitle("Teams")
             .navigationDestination(for: AVPTeam.self) { team in
-                TeamDetailView(team: team, season: seasonSelection.selectedSeason)
+                TeamDetailView(team: team, initialSeason: seasonSelection.selectedSeason)
             }
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
