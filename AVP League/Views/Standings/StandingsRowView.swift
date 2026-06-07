@@ -4,21 +4,14 @@ struct StandingsRowView: View {
     let standing: TeamStanding
 
     var body: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 10) {
             Text("\(standing.rank)")
                 .font(.headline.monospacedDigit())
                 .foregroundStyle(standing.rank <= 3 ? .primary : .secondary)
-                .frame(width: 24, alignment: .trailing)
+                .frame(width: 16, alignment: .leading)
 
-            TeamBadgeView(team: standing.team)
-
-            VStack(alignment: .leading, spacing: 2) {
-                Text(standing.team.name)
-                    .font(.body.weight(.medium))
-                Text(standing.team.city)
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
+            Text(standing.team.name)
+                .font(.body.weight(.medium))
 
             Spacer()
 
@@ -31,6 +24,7 @@ struct StandingsRowView: View {
             }
         }
         .padding(.vertical, 2)
+        .listRowInsets(EdgeInsets(top: 11, leading: 12, bottom: 11, trailing: 16))
     }
 }
 

@@ -13,6 +13,13 @@ struct TeamStanding: Identifiable, Hashable {
 
     var record: String { "\(genderMatchWins)-\(genderMatchLosses)" }
 
+    var gamesPlayed: Int { genderMatchWins + genderMatchLosses }
+
+    var winPercentage: Double {
+        guard gamesPlayed > 0 else { return 0 }
+        return Double(genderMatchWins) / Double(gamesPlayed)
+    }
+
     var setDifferential: Int { setsWon - setsLost }
 
     var setDifferentialDisplay: String {

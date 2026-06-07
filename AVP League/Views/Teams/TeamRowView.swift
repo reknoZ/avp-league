@@ -5,29 +5,21 @@ struct TeamRowView: View {
     let profile: TeamSeasonProfile?
 
     var body: some View {
-        HStack(spacing: 12) {
-            TeamBadgeView(team: team)
+        VStack(alignment: .leading, spacing: 4) {
+            Text(team.name)
+                .font(.body.weight(.semibold))
 
-            VStack(alignment: .leading, spacing: 4) {
-                Text(team.name)
-                    .font(.body.weight(.semibold))
-                Text(team.city)
+            if let profile {
+                Text(profile.mensPair.display)
                     .font(.caption)
                     .foregroundStyle(.secondary)
-                if let profile {
-                    Text("\(profile.mensPair.display) · \(profile.womensPair.display)")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                        .lineLimit(1)
-                }
+
+                Text(profile.womensPair.display)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
             }
-
-            Spacer()
-
-            Image(systemName: "chevron.right")
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(.tertiary)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.vertical, 2)
     }
 }

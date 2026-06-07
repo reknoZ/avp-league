@@ -8,6 +8,7 @@ struct LiveMatchRowView: View {
             HStack {
                 liveHeader
                 Spacer()
+                MatchDateTimeLabel(date: match.date, venue: match.venue, style: .timeOnly, font: .caption)
                 Text(match.division.shortLabel)
                     .font(.caption.weight(.semibold))
                     .foregroundStyle(.secondary)
@@ -20,13 +21,6 @@ struct LiveMatchRowView: View {
                 result: match.result,
                 showsLiveBadge: false
             )
-
-            HStack(spacing: 12) {
-                Label(MatchDateFormatter.format(match.date), systemImage: "clock")
-                Label(match.venue, systemImage: "mappin.and.ellipse")
-            }
-            .font(.caption)
-            .foregroundStyle(.secondary)
         }
         .padding(.vertical, 6)
     }

@@ -44,14 +44,14 @@ enum LeagueSampleData {
         }
     }
 
-    private static func date(_ year: Int, _ month: Int, _ day: Int, hour: Int = 14, minute: Int = 0) -> Date {
+    private static func date(_ year: Int, _ month: Int, _ day: Int, hour: Int = 14, minute: Int = 0, venue: String) -> Date {
         var components = DateComponents()
         components.year = year
         components.month = month
         components.day = day
         components.hour = hour
         components.minute = minute
-        components.timeZone = TimeZone(identifier: "America/New_York")
+        components.timeZone = VenueTimeZone.timeZone(for: venue)
         return Calendar.current.date(from: components) ?? Date()
     }
 
@@ -82,7 +82,7 @@ enum LeagueSampleData {
         }
         return LeagueMatch(
             id: id, seasonYear: seasonYear, weekNumber: week,
-            date: date(seasonYear, month, day, hour: hour),
+            date: date(seasonYear, month, day, hour: hour, venue: venue),
             homeTeamID: home, awayTeamID: away, venue: venue,
             division: division,
             status: matchResult == nil ? .upcoming : .completed,

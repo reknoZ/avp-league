@@ -1,14 +1,18 @@
 import Foundation
 
 enum StandingsCalculator {
-    static func standings(for matches: [LeagueMatch], teams: [AVPTeam] = AVPTeam.allTeams) -> [TeamStanding] {
+    static func standings(
+        for matches: [LeagueMatch],
+        category: StandingsCategory = .city,
+        teams: [AVPTeam] = AVPTeam.allTeams
+    ) -> [TeamStanding] {
         var stats: [String: (matchPoints: Int, wins: Int, losses: Int, setsWon: Int, setsLost: Int)] = [:]
 
         for team in teams {
             stats[team.id] = (0, 0, 0, 0, 0)
         }
 
-        for match in matches where match.status == .completed {
+        for match in matches where match.status == .completed && category.includes(match.division) {
             accumulateSide(
                 homeID: match.homeTeamID,
                 awayID: match.awayTeamID,
@@ -30,9 +34,7 @@ enum StandingsCalculator {
             )
         }
         .sorted { lhs, rhs in
-            if lhs.matchPoints != rhs.matchPoints { return lhs.matchPoints > rhs.matchPoints }
-            if lhs.genderMatchWins != rhs.genderMatchWins { return lhs.genderMatchWins > rhs.genderMatchWins }
-            return lhs.setDifferential > rhs.setDifferential
+            compare(lhs, rhs, category: category)
         }
 
         return sorted.enumerated().map { index, standing in
@@ -74,6 +76,19 @@ enum StandingsCalculator {
             stats[awayID]?.wins += 1
             stats[homeID]?.losses += 1
         }
+    }
+
+    private static func compare(_ lhs: TeamStanding, _ rhs: TeamStanding, category: StandingsCategory) -> Bool {
+        if lhs.winPercentage != rhs.winPercentage { return lhs.winPercentage > rhs.winPercentage }
+
+        switch category {
+        case .city:
+            if lhs.genderMatchWins != rhs.genderMatchWins { return lhs.genderMatchWins > rhs.genderMatchWins }
+        case .women, .men:
+            if lhs.matchPoints != rhs.matchPoints { return lhs.matchPoints > rhs.matchPoints }
+        }
+
+        return lhs.setDifferential > rhs.setDifferential
     }
 
     /// Standings points by set result: 2-0 → 3, 2-1 → 2, 1-2 → 1, 0-2 → 0.

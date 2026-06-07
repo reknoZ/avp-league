@@ -9,6 +9,7 @@ struct MatchSetScorecardView: View {
 
     private let setCount = 3
     private let setColumnWidth: CGFloat = 28
+    private let pointsColumnWidth: CGFloat = 24
 
     var body: some View {
         switch status {
@@ -83,6 +84,9 @@ struct MatchSetScorecardView: View {
         let teamWon = isHome
             ? result.homeSetsWon > result.awaySetsWon
             : result.awaySetsWon > result.homeSetsWon
+        let setsWon = isHome ? result.homeSetsWon : result.awaySetsWon
+        let setsLost = isHome ? result.awaySetsWon : result.homeSetsWon
+        let matchPoints = StandingsCalculator.matchPoints(setsWon: setsWon, setsLost: setsLost)
 
         return GridRow {
             teamName(name, won: colorWinners ? teamWon : nil)
@@ -92,6 +96,10 @@ struct MatchSetScorecardView: View {
                 let teamPoints = isHome ? set?.homePoints : set?.awayPoints
                 let opponentPoints = isHome ? set?.awayPoints : set?.homePoints
                 setScore(teamPoints: teamPoints, opponentPoints: opponentPoints)
+            }
+
+            if colorWinners {
+                standingsPoints(matchPoints, won: teamWon)
             }
         }
     }
@@ -115,6 +123,15 @@ struct MatchSetScorecardView: View {
             .font(.subheadline.monospacedDigit())
             .foregroundStyle(setScoreColor(teamPoints: teamPoints, opponentPoints: opponentPoints))
             .frame(width: setColumnWidth, alignment: .trailing)
+    }
+
+    private func standingsPoints(_ points: Int, won: Bool) -> some View {
+        Text("\(points)")
+            .font(.caption.weight(.bold).monospacedDigit())
+            .foregroundStyle(.white)
+            .frame(width: 22, height: 22)
+            .background(won ? Color.green : Color.red, in: RoundedRectangle(cornerRadius: 5, style: .continuous))
+            .frame(width: pointsColumnWidth, alignment: .trailing)
     }
 
     private func setScoreColor(teamPoints: Int?, opponentPoints: Int?) -> Color {

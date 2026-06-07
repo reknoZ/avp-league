@@ -1,18 +1,31 @@
 import SwiftUI
 
 struct StandingsHeaderView: View {
+    let category: StandingsCategory
+
     var body: some View {
         HStack {
-            Text("Ranked by match points (3 for 2-0, 2 for 2-1, 1 for 1-2), then wins, then set differential.")
+            Text(headerText)
                 .font(.caption)
                 .foregroundStyle(.secondary)
             Spacer()
         }
         .padding(.vertical, 4)
     }
+
+    private var headerText: String {
+        switch category {
+        case .city:
+            return "Combined men's and women's matches. Ranked by win percentage, then wins, then set differential."
+        case .women:
+            return "Women's matches only. Ranked by win percentage, then match points, then set differential."
+        case .men:
+            return "Men's matches only. Ranked by win percentage, then match points, then set differential."
+        }
+    }
 }
 
 #Preview {
-    StandingsHeaderView()
+    StandingsHeaderView(category: .city)
         .padding()
 }

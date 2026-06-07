@@ -44,6 +44,10 @@ struct ScheduleView: View {
             .sorted { $0.date < $1.date }
     }
 
+    private var selectedWeekVenue: String? {
+        displayedMatches.first.map(\.venue)
+    }
+
     private var matchesByDay: [(day: Date, matches: [LeagueMatch])] {
         let scheduledMatches = displayedMatches.filter { !$0.isLive }
         let grouped = Dictionary(grouping: scheduledMatches) { match in
@@ -57,6 +61,14 @@ struct ScheduleView: View {
     var body: some View {
         NavigationStack {
             List {
+                if let selectedWeekVenue {
+                    Section {
+                        Label(VenueTimeZone.weekLocation(from: selectedWeekVenue), systemImage: "mappin.and.ellipse")
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+
                 if !liveMatches.isEmpty {
                     Section {
                         ForEach(liveMatches) { match in

@@ -7,9 +7,7 @@ struct TeamMatchHistoryRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             HStack {
-                Text(MatchDateFormatter.format(match.date))
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
+                MatchDateTimeLabel(date: match.date, venue: match.venue, font: .caption)
                 Spacer()
                 Text(match.division.shortLabel)
                     .font(.caption.weight(.semibold))

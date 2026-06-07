@@ -6,9 +6,7 @@ struct ScheduleRowView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
             HStack {
-                Text(MatchDateFormatter.format(match.date))
-                    .font(.subheadline)
-                    .foregroundStyle(.secondary)
+                MatchDateTimeLabel(date: match.date, venue: match.venue, style: .timeOnly)
                 Spacer()
                 Text(match.division.shortLabel)
                     .font(.caption.weight(.semibold))
@@ -21,10 +19,6 @@ struct ScheduleRowView: View {
                 status: match.status,
                 result: match.result
             )
-
-            Label(match.venue, systemImage: "mappin.and.ellipse")
-                .font(.caption)
-                .foregroundStyle(.secondary)
         }
         .padding(.vertical, 4)
     }

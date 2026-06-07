@@ -91,8 +91,8 @@ final class LeagueDataService {
         teamProfiles(for: season).first { $0.teamID == team.id }
     }
 
-    func standings(for season: Season) -> [TeamStanding] {
-        StandingsCalculator.standings(for: matches(for: season))
+    func standings(for season: Season, category: StandingsCategory = .city) -> [TeamStanding] {
+        StandingsCalculator.standings(for: matches(for: season), category: category)
     }
 
     func matches(for team: AVPTeam, season: Season) -> [LeagueMatch] {
