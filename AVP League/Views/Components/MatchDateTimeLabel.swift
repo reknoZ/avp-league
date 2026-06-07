@@ -10,7 +10,7 @@ struct MatchDateTimeLabel: View {
     let venue: String
     var style: MatchDateTimeStyle = .full
     var font: Font = .subheadline
-    var foregroundStyle: Color = .secondary
+    var foregroundStyle: Color = .blue
 
     @State private var showsLocalTime = false
 

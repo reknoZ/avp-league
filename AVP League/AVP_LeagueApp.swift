@@ -11,17 +11,28 @@ import SwiftUI
 struct AVP_LeagueApp: App {
     @Environment(\.scenePhase) private var scenePhase
     @State private var dataService = LeagueDataService.shared
+    @State private var showSplash = true
 
     var body: some Scene {
         WindowGroup {
-            RootTabView()
-                .environment(dataService)
-                .onAppear {
-                    dataService.startAutoRefresh()
+            ZStack {
+                RootTabView()
+                    .environment(dataService)
+                    .onAppear {
+                        dataService.startAutoRefresh()
+                    }
+                    .onDisappear {
+                        dataService.stopAutoRefresh()
+                    }
+
+                if showSplash {
+                    SplashView {
+                        showSplash = false
+                    }
+                    .transition(.opacity)
+                    .zIndex(1)
                 }
-                .onDisappear {
-                    dataService.stopAutoRefresh()
-                }
+            }
         }
         .onChange(of: scenePhase) { _, newPhase in
             switch newPhase {

@@ -23,14 +23,13 @@ struct TeamDetailView: View {
 
             if let profile {
                 TeamRosterSectionView(profile: profile)
-                TeamEventsSectionView(events: profile.events)
             }
 
             TeamRecordSectionView(standing: standing)
 
             Section("Match History") {
                 ForEach(matches) { match in
-                    TeamMatchHistoryRowView(match: match, teamID: team.id)
+                    TeamMatchHistoryRowView(match: match)
                 }
             }
         }
